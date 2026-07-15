@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Formação introdutória de Data Science: da decisão ao valor, com Machine Learning, LLMs e OR-Tools.">
+  <title>Data Science — da decisão ao valor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="topbar">
+    <a class="brand" href="#1" aria-label="Início"><span class="brand-mark">DS</span><span>Data Science</span></a>
+    <div class="top-actions">
+      <button id="indexBtn" class="icon-btn" title="Índice (I)" aria-label="Abrir índice">☰</button>
+      <button id="notesBtn" class="icon-btn" title="Notas do formador (N)" aria-label="Mostrar notas">N</button>
+      <button id="fullBtn" class="icon-btn" title="Ecrã inteiro (F)" aria-label="Ecrã inteiro">⛶</button>
+    </div>
+  </header>
+
+  <main id="deck" class="deck" aria-live="polite">
+    <section class="slide cover active" data-title="Abertura">
+      <div class="eyebrow">Formação · primeira abordagem técnica</div>
+      <h1>Data Science<span class="accent">.</span></h1>
+      <p class="hero-sub">Dos dados à decisão.<br>Da experimentação ao valor.</p>
+      <div class="cover-line"></div>
+      <p class="lead">Uma capacidade que combina <b>pessoas</b>, <b>dados</b>, <b>modelos</b> e <b>processos</b>.</p>
+      <div class="notes"><b>Nota do formador:</b> Abra com uma pergunta: “Que decisão da vossa organização gostariam de tomar melhor?” Não comece por algoritmos; comece pela decisão.</div>
+    </section>
+
+    <section class="slide quote-slide" data-title="A ideia central">
+      <div class="section-no">01 · Ponto de partida</div>
+      <blockquote>Data Science não começa nos dados<br>nem termina num modelo.</blockquote>
+      <p class="quote-detail">Começa numa <strong>decisão</strong> a melhorar e termina quando a solução é <strong>utilizada</strong>, produz valor mensurável e continua a funcionar de forma responsável.</p>
+      <div class="flow-line"><span>Dados</span><i>→</i><span>Conhecimento</span><i>→</i><span>Decisão</span><i>→</i><span>Ação</span><i>→</i><span>Valor</span></div>
+      <div class="notes"><b>Mensagem:</b> Dados parados são um custo. O valor surge na última metade da cadeia: decisão, ação e resultado.</div>
+    </section>
+
+    <section class="slide" data-title="Definição">
+      <div class="section-no">02 · Definir sem complicar</div>
+      <h2>O que é Data Science?</h2>
+      <p class="definition">Disciplina interdisciplinar que combina <mark>conhecimento do negócio</mark>, dados, estatística, programação e métodos computacionais para compreender fenómenos, apoiar decisões e criar soluções baseadas em evidência.</p>
+      <div class="pill-row"><span>Compreender</span><span>Prever</span><span>Recomendar</span><span>Automatizar</span></div>
+      <p class="callout">Nem todos os projetos precisam de Machine Learning. Todos precisam de um problema bem definido.</p>
+      <div class="notes"><b>Distinção importante:</b> Data Science é mais ampla do que ML. Uma análise estatística ou uma otimização podem ser Data Science sem treinar um modelo preditivo.</div>
+    </section>
+
+    <section class="slide" data-title="Interdisciplinaridade">
+      <div class="section-no">03 · Uma disciplina de interseções</div>
+      <h2>O valor vive nas ligações</h2>
+      <div class="orbit" aria-label="Componentes de Data Science">
+        <div class="core">DATA<br>SCIENCE</div>
+        <div class="orb o1">Negócio</div><div class="orb o2">Dados</div><div class="orb o3">Estatística</div>
+        <div class="orb o4">Engenharia</div><div class="orb o5">Comunicação</div><div class="orb o6">Ética & risco</div>
+      </div>
+      <p class="centered muted">Sofisticação técnica sem contexto não é maturidade.</p>
+      <div class="notes">Use a imagem original como inspiração: várias disciplinas orbitam Data Science. Saliente conhecimento de domínio, bases de dados, visualização, computação, privacidade e processos.</div>
+    </section>
+
+    <section class="slide" data-title="Toda a empresa">
+      <div class="section-no">04 · Capacidade organizacional</div>
+      <h2>É um trabalho de toda a empresa</h2>
+      <div class="roles-grid">
+        <article><b>Liderança</b><span>prioridade · investimento · risco</span></article>
+        <article><b>Negócio</b><span>problema · regras · sucesso</span></article>
+        <article><b>Operações</b><span>processo · adoção · feedback</span></article>
+        <article><b>Dados & IT</b><span>qualidade · acesso · operação</span></article>
+        <article><b>Data Science</b><span>hipóteses · modelos · avaliação</span></article>
+        <article><b>Risco & Legal</b><span>privacidade · controlo · auditoria</span></article>
+      </div>
+      <p class="big-line">A equipa técnica constrói a solução.<br><strong>A organização constrói a mudança.</strong></p>
+      <div class="notes">Pergunte quem falta habitualmente nos projetos. A resposta costuma ser utilizadores finais, operações, ou responsáveis pelos dados.</div>
+    </section>
+
+    <section class="slide" data-title="Experimentação">
+      <div class="section-no">05 · Método</div>
+      <h2>Data Science é experimentação</h2>
+      <div class="loop">
+        <div><b>1</b><span>Enquadrar<br>o problema</span></div><i>→</i>
+        <div><b>2</b><span>Compreender<br>os dados</span></div><i>→</i>
+        <div><b>3</b><span>Construir<br>& testar</span></div><i>→</i>
+        <div><b>4</b><span>Avaliar<br>impacto</span></div><i>→</i>
+        <div><b>5</b><span>Operar &<br>aprender</span></div>
+      </div>
+      <p class="callout">Hipótese → experiência → evidência → decisão → nova hipótese</p>
+      <div class="notes">O ciclo é iterativo. É legítimo descobrir que os dados não chegam ou que o caso não cria valor. Uma experiência que evita um investimento errado também produz valor.</div>
+    </section>
+
+    <section class="slide" data-title="Problema certo">
+      <div class="section-no">06 · Antes do algoritmo</div>
+      <h2>Começar pela decisão</h2>
+      <div class="compare">
+        <article class="bad"><small>Pedido tecnológico</small><p>“Queremos usar Inteligência Artificial.”</p></article>
+        <div class="arrow">→</div>
+        <article class="good"><small>Problema operacional</small><p>“Queremos planear entregas com menos quilómetros, cumprindo capacidade e horários.”</p></article>
+      </div>
+      <div class="questions"><span>Quem decide?</span><span>Que ação muda?</span><span>Como medimos?</span><span>Quanto custa errar?</span></div>
+      <div class="notes">Este slide introduz desde já o caso de rotas. Insista na diferença entre objetivo, função objetivo e restrições.</div>
+    </section>
+
+    <section class="slide" data-title="Mapa tecnológico">
+      <div class="section-no">07 · Conceitos relacionados</div>
+      <h2>Data Science, IA, ML e Deep Learning</h2>
+      <div class="concept-map">
+        <div class="ai"><b>Inteligência Artificial</b><span>sistemas que executam tarefas associadas à inteligência</span>
+          <div class="ml"><b>Machine Learning</b><span>aprende padrões a partir de dados</span>
+            <div class="dl"><b>Deep Learning</b><span>redes neuronais multicamada</span>
+              <div class="llm"><b>LLMs</b><span>linguagem & geração</span></div>
+            </div>
+          </div>
+        </div>
+        <aside><b>Data Science atravessa o mapa</b><p>e acrescenta estatística, engenharia, experimentação, visualização e negócio.</p></aside>
+      </div>
+      <div class="notes">IA é o campo mais amplo. ML está dentro de IA; DL dentro de ML; muitos LLMs atuais usam Deep Learning. Data Science não cabe totalmente nesta hierarquia.</div>
+    </section>
+
+    <section class="slide" data-title="Tipos de modelos">
+      <div class="section-no">08 · Escolher a ferramenta</div>
+      <h2>Quatro famílias, quatro perguntas</h2>
+      <div class="model-grid">
+        <article><em>01</em><b>Supervisionado</b><span>Qual será o resultado?</span><small>classificação · regressão</small></article>
+        <article><em>02</em><b>Não supervisionado</b><span>Que estrutura existe?</span><small>clusters · anomalias</small></article>
+        <article><em>03</em><b>Otimização</b><span>Qual é a melhor decisão?</span><small>restrições · função objetivo</small></article>
+        <article><em>04</em><b>Generativo</b><span>Que conteúdo criar?</span><small>texto · imagem · código</small></article>
+      </div>
+      <p class="callout"><strong>Otimização não é necessariamente IA.</strong> É frequentemente Investigação Operacional: matemática, restrições, pesquisa e heurísticas.</p>
+      <div class="notes">Incluímos otimização como família operacional, mesmo não sendo “aprendizagem”. Isto prepara OR-Tools e corrige a ideia de que Data Science é apenas previsão.</div>
+    </section>
+
+    <section class="slide dark" data-title="OR-Tools">
+      <div class="section-no">09 · Caso transversal</div>
+      <h2>OR-Tools: da previsão à decisão</h2>
+      <div class="split">
+        <div><p class="definition compact">OR-Tools é uma biblioteca de otimização combinatória usada para encontrar boas decisões em problemas com muitas alternativas e restrições.</p>
+          <div class="pill-row"><span>TSP</span><span>VRP</span><span>Scheduling</span><span>CP-SAT</span></div>
+        </div>
+        <div class="formula"><small>Objetivo</small><strong>min Σ custo<sub>ij</sub> · x<sub>ij</sub></strong><small>sujeito a capacidade, horários, turnos…</small></div>
+      </div>
+      <p class="callout invert">Prever pergunta “o que acontecerá?” · Otimizar pergunta “o que devemos fazer?”</p>
+      <p class="no-ai"><b>Não é preciso IA.</b> OR-Tools resolve este problema através de otimização combinatória e algoritmos de pesquisa. IA/ML é opcional.</p>
+      <div class="notes">OR-Tools é uma tecnologia Google open source. Não prometa “a solução perfeita” em todos os problemas: em problemas combinatórios grandes, procura-se frequentemente uma solução excelente dentro de um tempo aceitável.</div>
+    </section>
+
+    <section class="slide route-slide" data-title="Rotas na prática">
+      <div class="section-no">10 · Vehicle Routing Problem</div>
+      <h2>Uma cidade. Muitas entregas. Pouco tempo.</h2>
+      <div class="route-layout">
+        <svg id="routeMap" viewBox="0 0 700 360" role="img" aria-label="Simulação de rotas">
+          <g class="roads"><path d="M40 90H650M90 40V320M230 30V330M390 35V325M550 40V320"/><path d="M30 190H670M55 285H645"/></g>
+          <g id="routeLines"></g><g id="routeNodes"></g>
+        </svg>
+        <div class="route-panel"><small>Cenário demonstrativo</small><div><b id="kmValue">—</b><span>distância relativa</span></div><div><b>2</b><span>veículos</span></div><button id="optimizeBtn" class="primary">Otimizar rotas</button><button id="resetRouteBtn" class="secondary">Repor</button></div>
+      </div>
+      <div class="notes">Clique em “Otimizar rotas”. É uma ilustração, não executa OR-Tools no browser. Mostra a diferença entre uma sequência ingénua e rotas agrupadas. Explique que a solução real usa uma matriz de custo e restrições.</div>
+    </section>
+
+    <section class="slide" data-title="Formulação de rotas">
+      <div class="section-no">11 · Traduzir a operação</div>
+      <h2>O modelo é uma representação do negócio</h2>
+      <div class="pipeline">
+        <article><small>Entradas</small><b>Dados</b><p>localizações · procura · tempos · frota</p></article><i>→</i>
+        <article><small>Regras</small><b>Restrições</b><p>capacidade · janelas · pausas · skills</p></article><i>→</i>
+        <article><small>Preferência</small><b>Objetivo</b><p>custo · km · atraso · equilíbrio</p></article><i>→</i>
+        <article><small>Saída</small><b>Plano</b><p>sequência · veículo · horário</p></article>
+      </div>
+      <p class="big-line">Se uma regra importante não entra no modelo,<br><strong>a solução pode ser ótima — e inútil.</strong></p>
+      <div class="notes">Dê exemplos: uma carrinha refrigerada, acesso restrito, pausa obrigatória, cliente prioritário. O trabalho difícil é frequentemente elicitar e formalizar estas regras.</div>
+    </section>
+
+    <section class="slide" data-title="Arquitetura de rotas">
+      <div class="section-no">12 · Arquitetura de solução</div>
+      <h2>Da rede viária ao mapa final</h2>
+      <div class="tech-flow">
+        <article><span class="tech-icon">01</span><b>OSRM Table</b><p>Gera a matriz de <strong>tempos e distâncias</strong> pela rede rodoviária.</p><small>coordenadas → matriz de custos</small></article>
+        <i>→</i>
+        <article><span class="tech-icon">02</span><b>OR-Tools · Python</b><p>Otimiza a <strong>atribuição e sequência</strong> das visitas com restrições.</p><small>matriz + regras → ordem das visitas</small></article>
+        <i>→</i>
+        <article><span class="tech-icon">03</span><b>OSRM Route</b><p>Converte a sequência na <strong>geometria rodoviária</strong> final.</p><small>pontos ordenados → linha da rota</small></article>
+        <i>→</i>
+        <article><span class="tech-icon">04</span><b>QGIS · Leaflet</b><p>Permite <strong>visualizar, validar e analisar</strong> o resultado.</p><small>desktop analítico ou aplicação web</small></article>
+      </div>
+      <div class="tool-distinction"><b>Uma ferramenta, uma responsabilidade</b><span>OSRM calcula deslocações · OR-Tools toma a decisão · QGIS/Leaflet comunica o resultado</span></div>
+      <div class="optional-ai"><b>Onde a IA pode entrar — opcionalmente</b><span>prever tráfego · procura · atrasos · duração das paragens</span></div>
+      <div class="notes"><b>Narrativa:</b> OSRM Table calcula o custo entre todos os pares. OR-Tools trabalha sobre essa matriz. Depois da decisão, OSRM Route gera a linha real sobre a estrada. QGIS serve a análise especializada; Leaflet serve a publicação web.</div>
+    </section>
+
+    <section class="slide" data-title="Ciclo OR-Tools">
+      <div class="section-no">12 · O caso completo</div>
+      <h2>Rotas como projeto de Data Science</h2>
+      <ol class="journey">
+        <li><b>Enquadrar</b><span>Reduzir custo mantendo serviço</span></li>
+        <li><b>Preparar</b><span>Geocodificar e validar tempos</span></li>
+        <li><b>Baseline</b><span>Rotas atuais / vizinho mais próximo</span></li>
+        <li><b>Modelar</b><span>VRP, objetivo e restrições</span></li>
+        <li><b>Experimentar</b><span>Estratégias, pesos e cenários</span></li>
+        <li><b>Operar</b><span>Despacho, exceções e feedback</span></li>
+        <li><b>Monitorizar</b><span>Planeado vs. realizado</span></li>
+      </ol>
+      <div class="notes">Percorra o ciclo. Métricas: km, tempo, custo, OTIF, utilização da frota, estabilidade das rotas e número de alterações manuais.</div>
+    </section>
+
+    <section class="slide" data-title="Avaliação">
+      <div class="section-no">13 · Medir o que interessa</div>
+      <h2>Uma métrica nunca conta a história toda</h2>
+      <div class="scoreboard">
+        <div><strong>− km</strong><span>eficiência</span></div><div><strong>− custo</strong><span>economia</span></div>
+        <div><strong>+ OTIF</strong><span>serviço</span></div><div><strong>− CO₂</strong><span>sustentabilidade</span></div>
+        <div><strong>+ adoção</strong><span>operação</span></div><div><strong>+ estabilidade</strong><span>confiança</span></div>
+      </div>
+      <p class="callout">A melhor solução matemática não é automaticamente a melhor solução operacional.</p>
+      <div class="notes">Uma rota que muda radicalmente todos os dias pode gerar resistência. Pode ser necessário penalizar instabilidade, mesmo sacrificando alguns quilómetros.</div>
+    </section>
+
+    <section class="slide" data-title="LLMs">
+      <div class="section-no">14 · O presente da IA</div>
+      <h2>LLMs: uma interface para a linguagem</h2>
+      <p class="definition">Modelos de Deep Learning treinados em grandes volumes de dados para aprender padrões e <mark>gerar ou transformar conteúdo</mark> a partir de instruções.</p>
+      <div class="llm-uses"><span>Resumir</span><span>Extrair</span><span>Pesquisar</span><span>Traduzir</span><span>Programar</span><span>Assistir</span></div>
+      <div class="truth"><b>Fluência ≠ verdade</b><p>Um LLM produz uma resposta provável. Não é uma base de dados nem um motor de verdade.</p></div>
+      <div class="notes">Explique tokens de forma simples: o modelo prevê a continuação provável dado o contexto. Escala e alinhamento criam capacidades úteis, mas não garantem factos.</div>
+    </section>
+
+    <section class="slide rag-slide" data-title="Demonstração CVchat">
+      <div class="section-no">15 · Demonstração RAG</div>
+      <h2>Quando um documento passa a responder</h2>
+      <div class="rag-demo">
+        <div class="rag-copy">
+          <div class="demo-tag">CASO REAL · CVchat</div>
+          <p class="definition compact">Um RAG sobre um CV: o utilizador pergunta em linguagem natural e o sistema procura no documento antes de responder.</p>
+          <a class="demo-button" href="https://huggingface.co/spaces/Geoeasy/CVchat" target="_blank" rel="noopener noreferrer">Abrir CVchat ↗</a>
+          <a class="demo-url" href="https://huggingface.co/spaces/Geoeasy/CVchat" target="_blank" rel="noopener noreferrer">huggingface.co/spaces/Geoeasy/CVchat</a>
+        </div>
+        <div class="rag-flow" aria-label="Fluxo RAG">
+          <div><b>CV</b><span>documento</span></div><i>→</i>
+          <div><b>Indexar</b><span>fragmentos</span></div><i>→</i>
+          <div><b>Recuperar</b><span>contexto</span></div><i>→</i>
+          <div><b>LLM</b><span>resposta</span></div>
+        </div>
+      </div>
+      <div class="demo-questions"><b>Pergunte ao vivo</b><span>“Que competências técnicas apresenta?”</span><span>“Resume o perfil em 3 pontos.”</span><span>“Que experiência está ligada a dados?”</span></div>
+      <p class="rag-message">Qualquer documento pode tornar-se <strong>pesquisável e questionável</strong> — com permissões, fontes e validação.</p>
+      <div class="notes"><b>Demonstração:</b> abra o CVchat através do botão e faça uma pergunta concreta. Explique que o modelo não “decorou” o CV: a aplicação recupera fragmentos relevantes e fornece-os como contexto. Generalize para manuais, procedimentos, contratos, relatórios e documentação técnica.</div>
+    </section>
+
+    <section class="slide" data-title="LLMs empresariais">
+      <div class="section-no">15 · Aplicação responsável</div>
+      <h2>Do chat a uma solução empresarial</h2>
+      <div class="stack">
+        <div><b>Experiência</b><span>assistente · workflow · aplicação</span></div>
+        <div><b>Controlo</b><span>guardrails · aprovação humana · auditoria</span></div>
+        <div><b>Capacidades</b><span>RAG · ferramentas · agentes</span></div>
+        <div><b>Modelo</b><span>LLM · prompting · fine-tuning</span></div>
+        <div><b>Fundação</b><span>dados · segurança · identidade · avaliação</span></div>
+      </div>
+      <p class="muted centered">Quanto maior a autonomia, maior a necessidade de limites e observabilidade.</p>
+      <div class="notes">RAG traz fontes autorizadas; ferramentas consultam sistemas ou executam ações; agentes encadeiam passos. Toda ação deve ter permissões mínimas e rastreabilidade.</div>
+    </section>
+
+    <section class="slide" data-title="Mitos">
+      <div class="section-no">16 · Pensamento crítico</div>
+      <h2>Seis ideias a abandonar</h2>
+      <div class="myths">
+        <article><del>Mais dados é sempre melhor</del><ins>Relevância e qualidade primeiro</ins></article>
+        <article><del>Mais complexo é melhor</del><ins>Complexidade tem de pagar renda</ins></article>
+        <article><del>Boa métrica = bom projeto</del><ins>Impacto e adoção também contam</ins></article>
+        <article><del>IA elimina as pessoas</del><ins>Redesenha tarefas e decisões</ins></article>
+        <article><del>LLM sabe o que afirma</del><ins>Fundamentar, testar e controlar</ins></article>
+        <article><del>Produção é o fim</del><ins>Produção inicia a monitorização</ins></article>
+      </div>
+      <div class="notes">Peça aos alunos que escolham o mito mais frequente na sua organização e justifiquem.</div>
+    </section>
+
+    <section class="slide" data-title="Exercício">
+      <div class="section-no">17 · Agora é convosco</div>
+      <h2>Desenhar um caso de uso em 10 minutos</h2>
+      <div class="exercise">
+        <div><b>1</b><span>Que decisão ou processo queremos melhorar?</span></div>
+        <div><b>2</b><span>Quem usa o resultado e que ação toma?</span></div>
+        <div><b>3</b><span>Que dados e restrições são necessários?</span></div>
+        <div><b>4</b><span>Como medimos valor e qualidade?</span></div>
+        <div><b>5</b><span>Qual é o custo de uma decisão errada?</span></div>
+      </div>
+      <p class="callout">Escolham um porta-voz. Uma frase por resposta. Sem começar pela tecnologia.</p>
+      <div class="notes">Forme grupos de 3–5. Reserve 7 minutos para trabalho e 3 para partilha. Se bloquearem, sugira logística, previsão de procura, manutenção ou análise documental.</div>
+    </section>
+
+    <section class="slide closing" data-title="Encerramento">
+      <div class="section-no">18 · Síntese</div>
+      <h2>Três ideias para levar</h2>
+      <div class="takeaways">
+        <article><b>01</b><p>Começar pela <strong>decisão</strong>, não pelo algoritmo.</p></article>
+        <article><b>02</b><p>Combinar pessoas, dados, modelos e <strong>processos</strong>.</p></article>
+        <article><b>03</b><p>Experimentar, medir e operar com <strong>responsabilidade</strong>.</p></article>
+      </div>
+      <p class="final-quote">O objetivo não é ter mais modelos.<br>É tomar melhores decisões.</p>
+      <div class="notes">Volte à pergunta inicial. Convide 2–3 participantes a dizer que decisão gostariam agora de explorar e qual seria a primeira métrica.</div>
+    </section>
+  </main>
+
+  <nav class="controls" aria-label="Navegação">
+    <button id="prevBtn" aria-label="Slide anterior">←</button>
+    <span id="counter">1 / 21</span>
+    <button id="nextBtn" aria-label="Slide seguinte">→</button>
+  </nav>
+
+  <aside id="indexPanel" class="index-panel" aria-hidden="true"><div class="index-head"><b>Índice</b><button id="closeIndex" aria-label="Fechar">×</button></div><div id="indexList"></div></aside>
+  <div id="backdrop" class="backdrop"></div>
+  <script src="app.js"></script>
+</body>
+</html>
